@@ -1,7 +1,7 @@
 // console.log("Hello world");
 // console.log(5+5);
-const yash= require("./logger");
-console.log(yash);
+// const yash= require("./logger");
+// console.log(yash);
 
 const os= require("os");
 console.log(os.platform());
@@ -17,3 +17,6 @@ console.log(os.release());
 // console.log(os.homedir());
 console.log(os.hostname());
 
+
+const log= require("./logger");
+log.log1();
