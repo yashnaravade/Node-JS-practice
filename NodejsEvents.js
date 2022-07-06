@@ -14,3 +14,5 @@ myEmmitter.on("Waterfull", ()=>{
 console.log("The script is running");
 myEmmitter.emit("Waterfull");
 console.log("The script is still running");
+myEmmitter.emit("Waterfull");
+myEmmitter.emit("Waterfull");
