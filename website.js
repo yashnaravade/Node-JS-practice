@@ -17,6 +17,13 @@ const server = http.createServer((req, res)=>{
 
         res.end('This is api');
     }
+    else if(req.url === '/index'){
+        const fs = require('fs');
+        const data = fs.readFileSync('./index.html', 'utf8');
+        res.statusCode = 200;
+        res.end(data.toString());
+
+    }
     else{
         res.statusCode = 404;
         res.end('Not found');
